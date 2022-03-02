@@ -1,4 +1,8 @@
-# Argo CD ApplicationSet Controller 
+# Patched
+
+This fork hardcodes the Gitlab SCM provider to never include archived repos.
+
+# Argo CD ApplicationSet Controller
 
 The ApplicationSet controller is a Kubernetes controller that adds support for a new custom `ApplicationSet` CustomResourceDefinition (CRD). This controller/CRD enables both automation and greater flexibility when managing Argo CD Applications across a large number of clusters and within monorepos, plus it makes self-service usage possible on multitenant Kubernetes clusters.
 
