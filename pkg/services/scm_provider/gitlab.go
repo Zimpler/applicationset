@@ -43,6 +43,7 @@ func (g *GitlabProvider) ListRepos(ctx context.Context, cloneProtocol string) ([
 	opt := &gitlab.ListGroupProjectsOptions{
 		ListOptions:      gitlab.ListOptions{PerPage: 100},
 		IncludeSubgroups: &g.includeSubgroups,
+		Archived:         gitlab.Bool(false),
 	}
 	repos := []*Repository{}
 	for {
